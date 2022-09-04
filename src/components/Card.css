@@ -1,0 +1,46 @@
+
+div.gallery {
+    
+}
+
+div.gallery img {
+    width: 90%;
+    border: 1px solid #ccc;
+    height: auto;
+}
+
+div.desc .title {
+    width: 90%;
+    color: black;
+    padding: 0%;
+    text-align: center;
+    text-align: left;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+div .desc > p, .brackets {
+    color: #555;
+    font-weight:normal;
+    font-size: 11px;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 19.99999%;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1000px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 100%;
+    }
+}
