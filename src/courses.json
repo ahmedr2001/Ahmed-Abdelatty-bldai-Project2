@@ -1,0 +1,367 @@
+{
+	
+		"python": 		[
+			{
+				"id": 1,
+				"title": "Learn Python: The Complete Python Programming Course",
+				"author": "Avinash Jain, The Codex",
+				"imagePath": "../images/py1.png",
+				"rating": 4.4,
+				"reviews": 2845,
+				"price": 199.99,
+				"previous": 679.99 
+			},
+			{
+				"id": 2,
+				"title": "Learning Python for Data Analysis and Visualization",
+				"author": "Jose Portilla",
+				"imagePath": "../images/py2.png",
+				"rating": 4.4,
+				"reviews": 17956,
+				"price": 269.99,
+				"previous": 1599.99
+			},
+			{
+				"id": 3,
+				"title": "Python for Beginners - Programming from scratch",
+				"author": "Edwin Diaz, Coding Faculty Solutions",
+				"imagePath": "../images/py3.png",
+				"rating": 4.4,
+				"reviews": 1734,
+				"price": 199.99,
+				"previous": 679.99
+			},
+			{
+				"id": 4,
+				"title": "Learn Python: Python for Beginners",
+				"author": "Abrar Hussain",
+				"imagePath": "../images/py4.png",
+				"rating": 4.2,
+				"reviews": 2759,
+				"price": 199.99,
+				"previous": 319.99
+			},
+			{
+				"id": 5,
+				"title": "Python Beyond the Basics - Object-Oriented Programming",
+				"author": "Infinite Skills",
+				"imagePath": "../images/py5.png",
+				"rating": 4.4,
+				"reviews": 2927,
+				"price": 229.99,
+				"previous": 519.99
+			}
+		],
+		"excel": [
+			{
+				"id": 6,
+				"title": "Microsoft Excel 2013 Course Beginner/Intermediate",
+				"author": "Infinite Skills",
+				"image": "images/excel1.png",
+				"rating": 4.6,
+				"reviews": 1621,
+				"price": 519.99,
+				"previous": 999.99 
+			},
+			{
+				"id": 7,
+				"title": "Microsoft Excel 2013 Advanced. Online Excel",
+				"author": "Infinite Skills",
+				"image": "images/excel2.png",
+				"rating": 4.5,
+				"reviews": 3503,
+				"price": 519.99,
+				"previous": 999.99 
+			},
+			{
+				"id": 8,
+				"title": "Microsoft Excel - From Beginner to Expert in 6 Hours",
+				"author": "Edwin Diaz, Coding Faculty Solutions",
+				"image": "images/excel3.png",
+				"rating": 4.4,
+				"reviews": 1793,
+				"price": 679.99,
+				"previous": 999.99
+			},
+			{
+				"id": 9,
+				"title": "Sharper skills using Microsoft Excel 2010 for business",
+				"author": "Abrar Hussain",
+				"image": "images/excel4.png",
+				"rating": 4.3,
+				"reviews": 2774,
+				"price": 319.99,
+				"previous": 999.99
+			},
+			{
+				"id": 10,
+				"title": "Learn Microsoft Excel 2013 - Advanced",
+				"author": "Simon Sez IT",
+				"image": "images/excel5.png",
+				"rating": 4.6,
+				"reviews": 372,
+				"price": 679.99,
+				"previous": 999.99
+			}
+		],
+		"web": [
+			{
+				"id": 11,
+				"title": "Become a Certified HTML, CSS, JavaScript Web...",
+				"author": "Tech Learning Network, Mark Lassoff",
+				"image": "images/web1.png",
+				"rating": 4.5,
+				"reviews": 2739,
+				"price": 679.99,
+				"previous": 999.99
+			},
+			{
+				"id": 12,
+				"title": "The Complete 2020 Fullstack Web Developer...",
+				"author": "Kalob Taulien",
+				"image": "images/web2.png",
+				"rating": 4.5,
+				"reviews": 6160,
+				"price": 1299.99,
+				"previous": 1699.99
+			},
+			{
+				"id": 13,
+				"title": "Introduction to Web Development",
+				"author": "Tech Learning Network, Mark Lassoff",
+				"image": "images/web3.png",
+				"rating": 4.3,
+				"reviews": 1723,
+				"price": 229.99,
+				"previous": 559.99
+			},
+			{
+				"id": 14,
+				"title": "Running a Web Development Business:...",
+				"author": "Evan Kimbrell",
+				"image": "images/web4.png",
+				"rating": 4.8,
+				"reviews": 1575,
+				"price": 829.99,
+				"previous": 1599.99
+			},
+			{
+				"id": 15,
+				"title": "Ultimate Web Designer & Web Developer Course",
+				"author": "Brad Hussey",
+				"image": "images/web5.png",
+				"rating": 4.6,
+				"reviews": 13383,
+				"price": 1699.99,
+				"previous": 2099.99
+			}
+		],
+		"javascript": [
+			{
+				"id": 16,
+				"title": "JavaScript for Beginners",
+				"author": "Tech Learning Network",
+				"image": "images/js1.png",
+				"rating": 4.5,
+				"reviews": 788,
+				"price": 229.99,
+				"previous": 599.99
+			},
+			{
+				"id": 17,
+				"title": "1 Hour JavaScript",
+				"author": "John Bura",
+				"image": "images/js2.png",
+				"rating": 4.4,
+				"reviews": 1898,
+				"price": 1399.99,
+				"previous": 2099.99
+			},
+			{
+				"id": 18,
+				"title": "JavaScript: Understanding the Weird Parts",
+				"author": "Anthony Alicea",
+				"image": "images/js3.png",
+				"rating": 4.7,
+				"reviews": 45205,
+				"price": 1299.99,
+				"previous": 2099.99
+			},
+			{
+				"id": 19,
+				"title": "JavaScript for Beginners Learn by Doing Practical...",
+				"author": "Edwin Diaz, Coding Faculty Solutions",
+				"image": "images/js4.png",
+				"rating": 4.3,
+				"reviews": 14143,
+				"price": 679.99,
+				"previous": 1099.99
+			},
+			{
+				"id": 20,
+				"title": "JavaScript from Beginner to Expert",
+				"author": "Arkadiusz Wlodarczyk",
+				"image": "images/js5.png",
+				"rating": 4.3,
+				"reviews": 1155,
+				"price": 829.99,
+				"previous": 1699.99
+			}
+		],
+		"datasci": [
+			{
+				"id": 21,
+				"title": "Data Science A-Z&trade;: real-Life Data Science Exercises...",
+				"author": "Kirill Eremenko, Ligency I Team, Lig...",
+				"image": "images/ds1.png",
+				"rating": 4.6,
+				"reviews": 32044,
+				"price": 1299.99,
+				"previous": 2099.99
+			},
+			{
+				"id": 22,
+				"title": "Machine Learning, Data Science and Deep Learning...",
+				"author": "Sundog Education by Frank Kane, F...",
+				"image": "images/ds2.png",
+				"rating": 4.5,
+				"reviews": 27633,
+				"price": 269.99,
+				"previous": 569.99
+			},
+			{
+				"id": 23,
+				"title": "Data Science: Deep Learning and Neural...",
+				"author": "Lazy Programmer Inc.",
+				"image": "images/ds3.png",
+				"rating": 4.6,
+				"reviews": 8508,
+				"price": 1199.99,
+				"previous": 1999.99
+			},
+			{
+				"id": 24,
+				"title": "R Programming A-Z&trade;: R For Data Science With Re...",
+				"author": "Kirill Eremenko, Ligency I Team, Lig...",
+				"image": "images/ds4.png",
+				"rating": 4.7,
+				"reviews": 47137,
+				"price": 1399.99,
+				"previous": 1999.99
+			},
+			{
+				"id": 25,
+				"title": "Data Science and Machine Learing Bootcamp with R",
+				"author": "Jose Portilla",
+				"image": "images/ds5.png",
+				"rating": 4.8,
+				"reviews": 15123,
+				"price": 1599.99,
+				"previous": 2599.99
+			}
+		],
+		"aws": [
+			{
+				"id": 26,
+				"title": "Amazon Web Services (AWS) Certified 2022 - 4...",
+				"author": "BackSpace Acacdemy, Paul Coady",
+				"image": "images/aws1.png",
+				"rating": 4.5,
+				"reviews": 20993,
+				"price": 1299.99,
+				"previous": 2199.99
+			},
+			{
+				"id": 27,
+				"title": "AWS Certified Security Specialty 2022",
+				"author": "Zeal Vora",
+				"image": "images/aws2.png",
+				"rating": 4.6,
+				"reviews": 5331,
+				"price": 369.99,
+				"previous": 963.99
+			},
+			{
+				"id": 28,
+				"title": "Part 1: AWS Certified Solutions Architect SAA...",
+				"author": "Chandra Lingam",
+				"image": "images/aws3.png",
+				"rating": 4.6,
+				"reviews": 1571,
+				"price": 669.99,
+				"previous": 1699.99
+			},
+			{
+				"id": 29,
+				"title": "Practice Test AWS Solutions Architect...",
+				"author": "Chandra Lingam",
+				"image": "images/aws4.png",
+				"rating": 4.7,
+				"reviews": 2829,
+				"price": 519.99,
+				"previous": 1099.99
+			},
+			{
+				"id": 30,
+				"title": "AWS Certified Solution Architect - Associate",
+				"author": "Alan Rodrigues",
+				"image": "images/aws5.png",
+				"rating": 4.6,
+				"reviews": 2285,
+				"price": 829.99,
+				"previous": 1899.99
+			}
+		],
+		"drawing": [
+			{
+				"id": 31,
+				"title": "The Secrets to Drawing",
+				"author": "Matthew Fussell",
+				"image": "images/drw1.png",
+				"rating": 4.6,
+				"reviews": 3938,
+				"price": 319.99,
+				"previous": 999.99
+			},
+			{
+				"id": 32,
+				"title": "Drawing and Sketching for Beginners",
+				"author": "Robin Slee | Art | Illustration | iPad | Software...",
+				"image": "images/drw2.png",
+				"rating": 4.3,
+				"reviews": 1438,
+				"price": 319.99,
+				"previous": 559.99
+			},
+			{
+				"id": 33,
+				"title": "Building Confidence Through Drawing: Art for...",
+				"author": "Em Winn",
+				"image": "images/drw3.png",
+				"rating": 4.6,
+				"reviews": 1775,
+				"price": 269.99,
+				"previous": 889.99
+			},
+			{
+				"id": 34,
+				"title": "Art for Kids & Beginners: 15 Easy Drawing & Painting...",
+				"author": "Em Winn",
+				"image": "images/drw4.png",
+				"rating": 4.6,
+				"reviews": 766,
+				"price": 269.99,
+				"previous": 799.99
+			},
+			{
+				"id": 35,
+				"title": "The Ultimate Drawing Course - Beginner to...",
+				"author": "Jaysen Batchelor, Quinton Batchelor",
+				"image": "images/drw5.png",
+				"rating": 4.6,
+				"reviews": 114809,
+				"price": 829.99,
+				"previous": 2099.99
+			}
+		]
+}

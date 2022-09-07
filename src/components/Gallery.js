@@ -14,6 +14,7 @@ function Gallery(props) {
                 <button class="python" type="button">Explore Python</button>
                 </div>
                 <Card course={props.course}></Card>
+                <div className='clearfix'></div>
         </article>
     );
 }
