@@ -1,8 +1,10 @@
 import React from "react";
 import './Gallery.css'
 import Card from "./Card";
+import {useOutletContext} from 'react-router-dom';
 
 function Gallery(props) {
+    const filter = useOutletContext();
     return (
         <article id="article">
             <div id="python" class="tabcontent">
@@ -13,7 +15,7 @@ function Gallery(props) {
                 </p>
                 <button class="python" type="button">Explore Python</button>
                 </div>
-                <Card course={props.course}></Card>
+                <Card context={filter} ></Card>
                 <div className='clearfix'></div>
         </article>
     );

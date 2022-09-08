@@ -1,3 +1,28 @@
+.popuptext {
+    width: 100%;
+    max-height: 300%;
+    border: solid 1px black;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top:-50%;
+    left:100%;
+}
+
+.popuptext::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-right: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.show {
+    visibility: visible;
+}
 
 div.gallery {
     
@@ -7,6 +32,7 @@ div.gallery img {
     width: 90%;
     border: 1px solid #ccc;
     height: auto;
+    position: relative;
 }
 
 div.desc .title {
