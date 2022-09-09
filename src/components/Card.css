@@ -1,5 +1,6 @@
 .popuptext {
-    width: 100%;
+    background-color: white;
+    width: 130%;
     max-height: 300%;
     border: solid 1px black;
     visibility: hidden;
@@ -7,6 +8,17 @@
     z-index: 1;
     top:-50%;
     left:100%;
+}
+.popuptextinv {
+    background-color: white;
+    width: 130%;
+    max-height: 300%;
+    border: solid 1px black;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top:-50%;
+    right:110%;
 }
 
 .popuptext::after {
@@ -17,11 +29,31 @@
     margin-right: 0px;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent #555 transparent transparent;
+    border-color: transparent black transparent transparent;
+}
+.popuptextinv::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-left: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
 }
 
 .show {
     visibility: visible;
+}
+
+.cart {
+    padding: 10px 70px 10px 70px;
+    background-color: #a435f0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none; 
+    margin-top: -10px;
 }
 
 div.gallery {

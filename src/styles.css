@@ -11,13 +11,15 @@
 }
 
 nav span {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: -5px;
 }
 
 .logo {
     position: relative;
     top: 30%;
+    margin-left: 5px;
     padding-right: 10px;
     padding-left: 0px;
 }

@@ -3,6 +3,8 @@ import './styles.css';
 import Card from './components/Card';
 import Gallery from './components/Gallery';
 import {Outlet, Link, useSearchParams} from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 // function searchFunction(event){
 // 	event.preventDefault();
@@ -26,7 +28,8 @@ function App() {
   const filter = 'filter';
   return (
 	<div><nav className="nav" style={{height: "35px", position: "sticky", top:"0px", zIndex: "10", backgroundColor: "white"}}>
-            <span id="bar"><i className="fa fa-bars fa-2x"></i></span>
+            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+            {/* <span id="bar"><i className="fa fa-bars fa-2x"></i></span> */}
             <img className="logo" style={{maxHeight: "100%", display: "inline", paddingTop: "-10px",}} src={require('./images/udemylogo.png')} alt="Udemy Logo" />
             <span style={{display: "inline"}}>Categories</span>
             <form /*onkeyup={searchFunction(event)}*/ id="form" style={{display: "inline"}} action="#" method="post">

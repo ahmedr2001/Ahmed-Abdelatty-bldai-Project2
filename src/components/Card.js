@@ -5,6 +5,8 @@ import './Card.css';
 import LoadingSpinner from "./loadingSpinner";
 import PopUp from "./popUp";
 import popUpObject from "../coursesPopUp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faStar, faStarHalf} from '@fortawesome/free-solid-svg-icons';
 
 const initState = {
     courses: [],
@@ -81,7 +83,13 @@ function Card(props) {
                     <p className="title">{course.title}</p>
                     <p>{course.author}</p>
                     <p>
-                        <p className="orange">{course.rating}</p>
+                        <p style={{width: "100%"}} className="orange">{course.rating}
+                            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faStarHalf}></FontAwesomeIcon>
+                        </p>
                         <p className="brackets">{course.reviews}</p>
                     </p>
                     <p>E&#xa3;{course.price}<del>E&#xa3;{course.previous}   </del></p>
