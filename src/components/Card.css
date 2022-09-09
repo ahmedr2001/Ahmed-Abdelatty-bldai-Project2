@@ -8,6 +8,7 @@
     z-index: 1;
     top:-50%;
     left:100%;
+    color:black;
 }
 .popuptextinv {
     background-color: white;
@@ -19,6 +20,7 @@
     z-index: 1;
     top:-50%;
     right:110%;
+    color:black;
 }
 
 .popuptext::after {

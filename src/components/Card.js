@@ -1,6 +1,6 @@
 import React, {useEffect, /*useState,*/ useReducer} from "react";
 import ReactDOM from 'react-dom';
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, Link } from "react-router-dom";
 import './Card.css';
 import LoadingSpinner from "./loadingSpinner";
 import PopUp from "./popUp";
@@ -31,7 +31,6 @@ const reducer = (oldState, action) => {
 
 function Card(props) {
         const filter = useOutletContext();
-        console.log("1",filter);
         // const [Courses, setCourses] = useState([]);
         const [state, dispatch] = useReducer(reducer, initState);
 
@@ -71,8 +70,10 @@ function Card(props) {
 
             for(const course of state.courses){
                 if(course.title.toLowerCase().startsWith(filter.toLowerCase())){
-                    
-                    const element =(<div className="responsive">
+                    if(course.id===1){
+                        console.log(course.list[0].key);
+                    }
+                    const element =(<Link to={`/${course.id}`}><div className="responsive">
             <div className="gallery">
                 <div style={{position:"relative"}}>
                 <img onMouseEnter={()=>myFunction(course.id)} onMouseLeave={()=>myFunction(course.id)} src={require(`../images/py${course.id}.png`)} alt={"Card"} width={480} height={320}>
@@ -95,7 +96,7 @@ function Card(props) {
                     <p>E&#xa3;{course.price}<del>E&#xa3;{course.previous}   </del></p>
                 </div>
             </div>
-        </div>);
+        </div></Link>);
         elements.push(element);   }         
     }
     }

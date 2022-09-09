@@ -6,8 +6,6 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons'
 export default function PopUp(props) {
     
     let id = props._id;
-    console.log("id", id);
-    console.log("id", props.popUp[id-1]);
     let elements = [];
     for(let i=0; i<props.popUp[id-1].LOs.length;i++){
         const element = (
