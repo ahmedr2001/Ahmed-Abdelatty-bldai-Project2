@@ -2,9 +2,16 @@ import logo from './logo.svg';
 import './styles.css';
 import Card from './components/Card';
 import Gallery from './components/Gallery';
-import {Outlet, Link, useSearchParams} from 'react-router-dom';
+import {Outlet, Link, useSearchParams, useNavigate} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars} from '@fortawesome/free-solid-svg-icons';
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from 'react-query'
 
 // function searchFunction(event){
 // 	event.preventDefault();
@@ -24,6 +31,7 @@ import {faBars} from '@fortawesome/free-solid-svg-icons';
 // }
 
 function App() {
+  const navigate = useNavigate();
   let [searchParams, setSearchParams] = useSearchParams({replace:true});
   const filter = 'filter';
   return (
@@ -42,6 +50,9 @@ function App() {
                     } else {
                       setSearchParams({}, { replace: true });
                     }
+                  }}
+                  onClick={()=>{
+                    navigate("/");
                   }}
                 id="input-field" className="input-field" style={{width: "50%"}} type="text" placeholder="Search for anything" />
                 <button className="submit" type="submit">Search</button>
