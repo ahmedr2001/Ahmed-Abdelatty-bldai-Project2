@@ -255,3 +255,136 @@ section article p {
 .tabcontent {
     display: none;
 } */
+
+.cpHeader {
+    background-color: #1c1d1f;
+    color: white;
+    position: relative;
+    left: 0px;
+    top: -12px;
+    right: 0px;
+    bottom: 0px;
+    width: 86%;
+    padding-left: 14%;
+}
+
+.cpHeaderNav {
+    font-size: 13px;
+    font-weight: bold;
+    color: #cec0fc;
+    padding-top: 25px;
+}
+
+.cpHeaderTitle {
+    width: 40%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cpHeaderIntro {
+    width: 42%;
+    font-size: 18px;
+}
+
+.cpHeaderRate {
+    color: #eaca8c;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cpHeaderStars {
+    color: #eaca8c;
+    font-size: 10px;
+}
+
+.cpHeaderRateCount {
+    color: #cec0fc;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.cpHeaderEnrollCount {
+    font-size: 13px;
+}
+
+.cpHeaderCreators {
+    font-size: 13px;
+}
+
+.cpHeaderInfo {
+    font-size: 13px;
+    padding-bottom: 25px;
+}
+
+.cpFooter {
+    background-color: #1c1d1f;
+    color: white;
+}
+
+.cpFooterCompanies {
+    padding: 15px 0 15px 0;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    justify-content: space-between;
+    width: 95%;
+    left: 2.5%;
+}
+
+.cpFooterCompaniesText {
+    display: flex;
+    align-items: center;
+}
+
+.cpFooterCompaniesImg {
+    /* position: absolute; */
+    /* right: 0%; */
+}
+
+.cpFooterCompaniesImg img {
+    padding: 0 10px 0 10px;
+}
+
+.cpFooterSection {
+    font-size: 13px;
+}
+
+.cpFooterNav {
+    justify-content: space-between;
+    position: relative;
+    width: 95%;
+    padding-bottom: 50px;
+}
+
+.cpFooterNav ul {
+    list-style: none;
+}
+
+.cpFooter ul li {
+    padding: 4px;
+}
+
+.cpFooterNav button {
+    font-size: 14px;
+    /* font-weight: bold; */
+    color: white;
+    background-color: #1c1d1f;
+    padding: 10px 45px 10px 20px;
+    border: 1px solid white;
+    height: 9%;
+    transform: translateY(30%);
+}
+
+.cpFooterNavList {
+    position: relative;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.cpFooterLogo {
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}

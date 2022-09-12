@@ -36,7 +36,7 @@ function Card(props) {
 
         useEffect(() => {
             dispatch({type: "SEND_REQUEST"});
-            fetch("http://localhost:3000/python")
+            fetch("http://localhost:4000/python")
             .then((res) => res.json())
             .then((json) => {
 

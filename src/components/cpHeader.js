@@ -1,93 +1,65 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faStarHalf, faInfo, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faClosedCaptioning } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState, useReducer } from "react";
 import LoadingSpinner from "./loadingSpinner";
 import {useQuery, useQueryClient} from "react-query";
 
-const initState = {
-    course: {},
-    error: "",
-    isLoading: false
-};
+// const initState = {
+//     course: {},
+//     error: "",
+//     isLoading: false
+// };
 
-const reducer = (oldState, action) => {
-    switch(action.type) {
-        case "SEND_REQUEST":
-            return {...oldState, isLoading: true, error: ""};
-        case "REQUEST_SUCCESS":
-            return {course: action.payload, isLoading: false, error: ""};
-        case "REQUEST_FAILURE":
-            return {course: {}, isLoading: false, error: action.payload};
-        default:
-            return oldState;
-    }
-}
+// const reducer = (oldState, action) => {
+//     switch(action.type) {
+//         case "SEND_REQUEST":
+//             return {...oldState, isLoading: true, error: ""};
+//         case "REQUEST_SUCCESS":
+//             return {course: action.payload, isLoading: false, error: ""};
+//         case "REQUEST_FAILURE":
+//             return {course: {}, isLoading: false, error: action.payload};
+//         default:
+//             return oldState;
+//     }
+// }
 
 export default function CPHeader(props) {
-    let Id = props.courseId;
-    const queryClient = useQueryClient();
-    const [state, dispatch] = useReducer(reducer, initState);
-    let id=Id;
-    if(Id==="5"){id="4";}
+    let id = props.courseId;
+    // const [props, dispatch] = useReducer(reducer, initState);
     
-    useQuery('query',() => {
-        dispatch({type: "SEND_REQUEST"});
-        fetch(`http://localhost:4000/courses/${id}`)
-        .then(res => res.json())
-        .then((json) => {
-           dispatch({type: "REQUEST_SUCCESS", payload: json});
-        })
-        .catch(err => {dispatch({type: "REQUEST_FAILURE", payload: "something went wrong"})});
-        
-    }, []);
-    console.log("instructor", state.course.name);
+    console.log("instructor", props.course.instructor);
     // let name = course.instructor[0].name;
-    // let org = course.instructor[1].name;
-    const check = () => {
-        if(Object.keys(state.course).length===0){
-            return false;
-        }
-        for(let key of Object.keys(state.course)){
-            if(state.course.key===undefined){
-                return false;
-            }
-            if(Object.keys(state.course.key)===0){
-                return false;
-            }
-        }
-        return true;
+    let org = "";
+    if(id==="1" || id==="3") {
+        org = `, ${props.course.instructor[1].name}`;
     }
-    if(state.isLoading){
-        return (
-            <div>
-                <LoadingSpinner></LoadingSpinner>
-            </div>
-        );
-    } else if(state.error) {
-        return (
-            <div>
-                {state.error}
-            </div>
-        );
-    } else if(Object.keys(state.course).length!==0){
-        // console.log(state.course);
+    
     return (
-        <header>
-            <p>Development &#62; Programming Languages &#62; Python</p>
-            <p>{state.course.title}</p>
-            <p>{state.course.Introduction}</p>
+        <header className="cpHeader">
+            <p className="cpHeaderNav">Development &#62; Programming Languages &#62; Python</p>
+            <p className="cpHeaderTitle">{props.course.title}</p>
+            <p className="cpHeaderIntro">{props.course.Introduction}</p>
             <p>
-                <span>{state.course.rate}</span>
-                <span><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
-                <span><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
-                <span><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
-                <span><FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
-                <span><FontAwesomeIcon icon={faStarHalf}></FontAwesomeIcon></span>
-                <span>({state.course.ratingCount} ratings)</span>
-                <span>{state.course.enrollCount} students</span>
+                <span className="cpHeaderRate">{props.course.rate}</span>
+                <span className="cpHeaderStars"><FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStarHalf}></FontAwesomeIcon></span>
+                <span className="cpHeaderRateCount">({props.course.ratingCount} ratings  )</span>
+                <span className="cpHeaderEnrollCount">  {props.course.enrollCount} students</span>
             </p>
-            <p>Created by {state.course.instructor[0].name}, {state.course.instructor[1].name}</p>
+            <p className="cpHeaderCreators">Created by <span style={{color: "#cec0fc", textDecoration: "underline"}}>{props.course.instructor[0].name}{org}</span></p>
+            <p className="cpHeaderInfo">
+                <FontAwesomeIcon style={{color: "white"}} icon={faInfo}></FontAwesomeIcon>
+                <span style={{paddingLeft: "5px", paddingRight: "5px"}}>      Last updated {props.course.lastUpdate}      </span>
+                <FontAwesomeIcon style={{color: "white"}} icon={faGlobe}></FontAwesomeIcon>
+                <span style={{paddingLeft: "5px", paddingRight: "5px"}}>      {props.course.globe}      </span>
+                <FontAwesomeIcon style={{color: "white"}} icon={faClosedCaptioning}></FontAwesomeIcon>
+                <span style={{paddingLeft: "5px", paddingRight: "5px"}}>      {props.course.Captioning}      </span>
+            </p>
         </header>
     );
-    }
+    
 }
