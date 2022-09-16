@@ -388,3 +388,52 @@ section article p {
     justify-content: space-between;
     padding-bottom: 100px;
 }
+
+.whatLearn {
+    border: 1px solid #d1d7dc;
+    width: 42%;
+    margin-left: 14%;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.whatLearnContent {
+    font-size: 13px;
+}
+
+.whatLearnContentItem {
+    padding: 4px;
+}
+
+.courseContent {
+    width: 42%;
+    margin-left: 14%;
+}
+
+.courseContentTop {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.OneLecture {
+    font-size: 13px;
+    border: 1px solid #d1d7dc;
+    padding: 15px;
+    padding-left: 20px;
+    /* display: none; */
+}
+
+.courseContentLecturesTitle {
+    border: 1px solid #d1d7dc;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.OneLectureItem {
+    padding: 7px;
+}
+
+.expandAllSections {
+    font-weight: bold;
+    color: #5725d0;
+}
