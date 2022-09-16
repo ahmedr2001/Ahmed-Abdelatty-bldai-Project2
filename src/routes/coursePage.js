@@ -11,7 +11,7 @@ export default function CoursePage() {
     return (
         <div>
             <CPHeader course={courses[params.courseId-1]} courseId={params.courseId}></CPHeader>
-            <CPBody></CPBody>
+            <CPBody course={courses[params.courseId-1]} courseId={params.courseId}></CPBody>
             <CPFooter></CPFooter>
         </div>
     )
