@@ -437,3 +437,69 @@ section article p {
     font-weight: bold;
     color: #5725d0;
 }
+
+.reqs {
+    width: 42%;
+    margin-left: 14%;
+}
+
+.reqsItem {
+    font-size: 13px;
+}
+
+.reqsHeader {
+    margin-bottom: 0px;
+}
+
+.description {
+    width: 42%;
+    margin-left: 14%;
+}
+
+.descContent {
+    font-size: 13px;
+}
+
+.whoFor {
+    width: 42%;
+    margin-left: 14%;
+}
+
+.whoForLI {
+    font-size: 13px;
+    padding: 2px;
+}
+
+.whoForUL {
+    position: relative;
+    left: -3%;
+}
+
+.instructors {
+    width: 42%;
+    margin-left: 14%;
+}
+
+.instructorName {
+    color: #5725d0;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.instructorIntro {
+    color: #6a6f73;
+    font-size: 14px;
+    padding: 5px 0 10px 0;
+}
+
+.instructorStats {
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.instructorDescription {
+    font-size: 13px;
+    padding-bottom: 30px;
+}

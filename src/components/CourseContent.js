@@ -29,18 +29,20 @@ export default function CourseContent(props) {
     const toggleLectures = () => {
         if (display === "block") {
             setDisplay("none");
+            ReactDOM.findDOMNode(document.querySelector(".expandAllSections")).innerHTML = "Expand all sections";
         } else {
             setDisplay("block");
+            ReactDOM.findDOMNode(document.querySelector(".expandAllSections")).innerHTML = "Collapse all sections";
         }
         let imgs = document.querySelectorAll("img");
         for (let img of imgs) {
             let node = ReactDOM.findDOMNode(img);
             if (display === "none" && (node.src === require("../images/arrow-up.png")
              || node.src === require("../images/down-arrow.png"))) {
-                node.src = require("../images/down-arrow.png");
+                node.src = require("../images/arrow-up.png");
             } else if (display === "block"  && (node.src === require("../images/arrow-up.png")
             || node.src === require("../images/down-arrow.png"))) {
-                node.src = require("../images/arrow-up.png");
+                node.src = require("../images/down-arrow.png");
             }
         }
     }
