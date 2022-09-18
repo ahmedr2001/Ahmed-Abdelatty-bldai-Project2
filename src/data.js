@@ -278,7 +278,7 @@ const courses = [
       whoFor: [
         "Even if you haven't touched coding before, it won't matter. The easy step-to-step lectures will quickly guide you through everything you'll need to know about coding, mainly Python. This course is here for you to get accustomed and familiar with Python and its syntax. And above all, Python is one of the easiest coding languages to learn, and there's a lot you can do with it."
       ],
-      studentFeedback: ["43", "37", "15", "3", "2"],
+      studentFeedback: [43, 37, 15, 3, 2],
       reviews: [
         {
           id: 1,
@@ -381,7 +381,7 @@ const courses = [
         "Anyone interested in learning more about python, data science, or data visualizations.",
         "Anyone interested about the rapidly expanding world of data science!"
       ],
-      studentFeedback: ["46", "36", "13", "3", "2"],
+      studentFeedback: [46, 36, 13, 3, 2],
       reviews: [
         {
           id: 1,
@@ -657,7 +657,7 @@ const courses = [
         "Student totally new to programming.",
         "Student totally new to python."
       ],
-      studentFeedback: ["45", "39", "13", "2", "1"],
+      studentFeedback: [45, 39, 13, 2, 1],
       reviews: [
         {
           id: 1,
@@ -827,7 +827,7 @@ const courses = [
         "Beginners",
         "Anyone who wants to learn to program with Python!"
       ],
-      studentFeedback: ["39", "37", "18", "4", "2"],
+      studentFeedback: [39, 37, 18, 4, 2],
       reviews: [
         {
           id: 1,
@@ -965,7 +965,7 @@ const courses = [
         "Beginners",
         "Anyone who wants to learn to program with Python!"
       ],
-      studentFeedback: ["39", "37", "18", "4", "2"],
+      studentFeedback: [39, 37, 18, 4, 2],
       reviews: [
         {
           id: 1,
