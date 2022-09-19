@@ -12,10 +12,8 @@ export default function CoursePage() {
     return (
         <div>
             <CPHeader course={courses[params.courseId-1]} courseId={params.courseId}></CPHeader>
-            <div>
-                <CPBody course={courses[params.courseId-1]} courseId={params.courseId}></CPBody>
-                <CPSticky style={{display: "inline"}} course={courses[params.courseId-1]} courseId={params.courseId}></CPSticky> 
-            </div>
+            <CPBody course={courses[params.courseId-1]} courseId={params.courseId}></CPBody>
+            <CPSticky course={courses[params.courseId-1]} courseId={params.courseId}></CPSticky>             
             <CPFooter></CPFooter>
         </div>
     )

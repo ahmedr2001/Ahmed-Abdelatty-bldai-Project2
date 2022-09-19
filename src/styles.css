@@ -504,6 +504,21 @@ section article p {
     padding-bottom: 30px;
 }
 
+.feedbackBars {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.insideBars {
+    width: 100%;
+}
+
+.fb  {
+    display: flex;
+}
+
 .reviews {
     width: 45%;
     margin-left: 14%;
@@ -552,6 +567,105 @@ section article p {
 
 .cpSticky {
     position: sticky;
-    transform: translate(50%, -900%);
-    top: -1000%;
+    /* top: -1000%; */
+    bottom: -30%;
+    transform: translate(330%, 20px);
+    width: 300px;
+    background-color: white;
+    border: 1px solid white;
+    padding-bottom: 20px;
+    box-shadow: 0 6px 5px -4px #ccc;
+}
+
+.stickyPrice {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 0 15px 0;
+}
+
+.stickyCart {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 15px 0 15px 0;
+    background-color: #a435f0;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+.stickyBuy {
+    width: 90%;
+    margin: 8px 5% 0 5%;
+    padding: 15px 0 15px 0;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+.guarantee {
+    font-size: 13px;
+    display: "flex";
+    justify-content: end;
+}
+
+.stickyIncludes {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.stickyPerks {
+    font-size: 13px;
+}
+
+.stickyShare {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid #d1d7dc;
+}
+
+.stickyBusiness {
+    width: 100%;
+    /* margin: 0 5% 0 5%; */
+    padding: 10px 0 10px 0;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+.hundredpercent {
+    width: 20%;
+}
+
+@media screen and (max-width: 1320px) {
+    .fb {
+        flex-direction: column;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hundredpercent {
+        width: 100%;
+        align-items: center;
+    }
+
+    .feedbackBars {
+        height: 150px;
+        width: 100%;
+    }
+
+    .insideBars {
+        width: 133%;
+    }
 }

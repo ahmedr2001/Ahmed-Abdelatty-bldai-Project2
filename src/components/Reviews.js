@@ -41,7 +41,7 @@ export default function Reviews(props) {
     }
 
     return (
-        <div className="reviews">
+        <div style={{marginBottom: "-805px"}} className="reviews">
             <h2>Reviews</h2>
             {elements}
         </div>

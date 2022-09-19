@@ -3,7 +3,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export default function CPFooter(props) {
     return (
-        <div className="cpFooter">
+        <div style={{marginTop: "100px"}} className="cpFooter">
             <div className="cpFooterCompanies" style={{display: "flex"}}>
                 <div className="cpFooterCompaniesText">Top companies choose <span style={{color: "#cec0fc", padding: "0 5px 0 5px"}}> Udemy Business </span>to build in-demand career skills</div>
                 <div className="cpFooterCompaniesImg">
