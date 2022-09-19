@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df762881.css",
+    "main.js": "/static/js/main.b86249d2.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/alarm4.png": "/static/media/alarm4.da4a66ac812bee1e2f03.png",
+    "static/media/py1.png": "/static/media/py1.dd57421a1a261d3f9683.png",
+    "static/media/py2.png": "/static/media/py2.7ef2eb47500589636d75.png",
+    "static/media/py5.png": "/static/media/py5.e30decb7d59c0883d65f.png",
+    "static/media/udemylogo.png": "/static/media/udemylogo.e01559eef0fcaa6516dc.png",
+    "static/media/py4.png": "/static/media/py4.45411ef944a6e9b2dd1e.png",
+    "static/media/py3.png": "/static/media/py3.6ad4c6257e158ce421ac.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.df762881.css.map": "/static/css/main.df762881.css.map",
+    "main.b86249d2.js.map": "/static/js/main.b86249d2.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df762881.css",
+    "static/js/main.b86249d2.js"
+  ]
+}
