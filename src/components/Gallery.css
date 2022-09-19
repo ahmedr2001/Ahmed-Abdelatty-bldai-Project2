@@ -1,0 +1,251 @@
+.nav {
+    font-family: sans-serif;
+    font-size: smaller;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0 6px 5px -4px #ccc;
+}
+
+#bar {
+    display: none;
+}
+
+nav span {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.logo {
+    position: relative;
+    top: 30%;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+.input-field {
+    height: 120%;
+    border: 1px solid black;
+    border-radius: 1000px; 
+    text-indent: 20px;
+}
+
+.submit {
+    padding: 10px 15px;
+    color: white;
+    background-color: purple;
+    border: 1px solid purple;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.login {
+    padding: 10px 15px;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.signup {
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1450px) {
+    nav span {
+        display: none;
+    }
+
+    #search {
+        display: inline;
+    }
+}
+
+header {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    background-color: #f8f9fb;
+}
+
+.flex-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+#alarm {
+    width: 60%;
+}
+
+.article {
+    background-color: white;
+    box-shadow: 0 3px 7px  #ccc;
+    padding: 0px 20px 0 20px;
+    margin: 40px 50px 0 70px;
+    font-size: 25px;
+    height: 70%;
+}
+
+.article p {
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    #search, .input-field, .submit, .signup, .login {
+        display: none;
+    }
+    #bar {
+        display: inline;
+        position: relative;
+        left: -35%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        background-color: #f8f9fb;
+        padding-bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    #alarm {
+        width: 100%;
+    }
+    
+    .article {
+        width: 90%;
+        padding: 0 5% 0 5%;
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    .flex-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        box-shadow: 0 3px 7px  #ccc;
+    }    
+}
+
+div.gallery {
+    
+}
+
+div.gallery img {
+    width: 90%;
+    border: 1px solid #ccc;
+    height: auto;
+}
+
+div.desc .title {
+    width: 90%;
+    color: black;
+    padding: 0%;
+    text-align: center;
+    text-align: left;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+div .desc > p, .brackets {
+    color: #555;
+    font-weight:normal;
+    font-size: 11px;
+}
+
+.responsive {
+    padding: 0 0px;
+    float: left;
+    width: 19.99999%;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1000px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}  
+
+section h2 ~ * {
+    font-family: sans-serif;
+}
+
+section h2 ~ span, section h2 ~ span a, .tablinks {
+    font-weight: bold;
+    color: grey;
+    padding-right: 10px;
+    text-decoration: none;
+    border: none;
+}
+ 
+section h2 ~ span a:hover, .tablinks:hover {
+    color: black;
+}
+
+.python {
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+section {
+    width: 85%;
+    position: relative;
+    left: 7.5%;
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 10px 30px 30px 30px;
+    margin-top: 10px;
+}
+
+article p {
+    width: 66%;
+}
+
+.orange {
+    font-weight: bold;
+    font-size: 14px;
+    color: #b46948;
+}
+
+.checked {
+    color: #e59819;
+}
+
+.desc > p + p + p + p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.desc > p + p + p + p del {
+    font-weight: normal;
+    color: #777;
+}
