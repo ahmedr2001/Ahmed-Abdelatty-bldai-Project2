@@ -33,19 +33,26 @@ function Card(props) {
         const filter = useOutletContext();
         const [state, dispatch] = useReducer(reducer, initState);
 
-        useEffect(() => {
-            dispatch({type: "SEND_REQUEST"});
-            fetch("http://localhost:4000/python")
-            .then((res) => res.json())
-            .then((json) => {
+        // useEffect(() => {
+        //     dispatch({type: "SEND_REQUEST"});
+        //     fetch("http://localhost:4000/python")
+        //     .then((res) => res.json())
+        //     .then((json) => {
 
-                dispatch({type: "REQUEST_SUCCESS", payload: json});
-            })
-            .catch(() => {
-                dispatch({type: "REQUEST_FAILURE", payload: "something went wrong"});
-            });
-        }, []);
+        //         dispatch({type: "REQUEST_SUCCESS", payload: json});
+        //     })
+        //     .catch(() => {
+        //         dispatch({type: "REQUEST_FAILURE", payload: "something went wrong"});
+        //     });
+        // }, []);
         let elements = [];
+        useEffect(() => {
+
+            dispatch({type:"SEND_REQUEST"});
+            setTimeout(() => {
+                dispatch({type: "REQUEST_SUCCESS"});
+            }, 1000)
+        }, []);
         if(state.isLoading){
             return <div style={{display: "flex", justifyContent: "space-around"}}>
                 <LoadingSpinner></LoadingSpinner>
@@ -54,17 +61,17 @@ function Card(props) {
                 <LoadingSpinner></LoadingSpinner>
                 <LoadingSpinner></LoadingSpinner>
             </div>;
-        } else if (state.error) {
-            return <div style={{display: "flex", justifyContent: "space-around"}}>
-                <div>{state.error}</div>
-                <div>{state.error}</div>
-                <div>{state.error}</div>
-                <div>{state.error}</div>
-                <div>{state.error}</div>
-                </div>;
-        } else {
+        // } else if (state.error) {
+        //     return <div style={{display: "flex", justifyContent: "space-around"}}>
+        //         <div>{state.error}</div>
+        //         <div>{state.error}</div>
+        //         <div>{state.error}</div>
+        //         <div>{state.error}</div>
+        //         <div>{state.error}</div>
+        //         </div>;
+         } else {
 
-            for(const course of state.courses){
+            for(const course of props.courses){
                 if(course.title.toLowerCase().startsWith(filter.toLowerCase())){
                     const element =(<Link to={`/${course.id}`}><div className="responsive">
             <div className="gallery">
@@ -92,9 +99,9 @@ function Card(props) {
         </div></Link>);
         elements.push(element);   }         
     }
-    }
     return elements;
-}
+    }
+ }
 
 function myFunction(id) {
     var popupNode = document.getElementById(id);

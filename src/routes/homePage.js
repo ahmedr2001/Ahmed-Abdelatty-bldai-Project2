@@ -1,6 +1,7 @@
 import '../styles.css';
 import Gallery from '../components/Gallery';
 import { useOutletContext } from 'react-router-dom';
+import python from '../pythonCourses';
 
 export default function HomePage(props) {
 	const filter = useOutletContext();
@@ -28,7 +29,7 @@ export default function HomePage(props) {
             </div>
             
                 
-    <Gallery context={filter}></Gallery>
+    <Gallery courses={python} context={filter}></Gallery>
         
         
         </section>
