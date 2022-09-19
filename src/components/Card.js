@@ -1,4 +1,4 @@
-import React, {useEffect, /*useState,*/ useReducer} from "react";
+import React, {useEffect, useReducer} from "react";
 import ReactDOM from 'react-dom';
 import { useOutletContext, Link } from "react-router-dom";
 import './Card.css';
@@ -31,7 +31,6 @@ const reducer = (oldState, action) => {
 
 function Card(props) {
         const filter = useOutletContext();
-        // const [Courses, setCourses] = useState([]);
         const [state, dispatch] = useReducer(reducer, initState);
 
         useEffect(() => {
@@ -46,9 +45,6 @@ function Card(props) {
                 dispatch({type: "REQUEST_FAILURE", payload: "something went wrong"});
             });
         }, []);
-        // for(const course of courses){
-        //     console.log(course);
-        // }
         let elements = [];
         if(state.isLoading){
             return <div style={{display: "flex", justifyContent: "space-around"}}>
@@ -70,9 +66,6 @@ function Card(props) {
 
             for(const course of state.courses){
                 if(course.title.toLowerCase().startsWith(filter.toLowerCase())){
-                    if(course.id===1){
-                        console.log(course.list[0].key);
-                    }
                     const element =(<Link to={`/${course.id}`}><div className="responsive">
             <div className="gallery">
                 <div style={{position:"relative"}}>
@@ -100,29 +93,7 @@ function Card(props) {
         elements.push(element);   }         
     }
     }
-    
-        // }
-        // for(let i=0;i<5;i++){
-
-        //     const element =(<div className="responsive">
-        //     <div className="gallery">
-        //         <img src={require(`../images/py${i+1}.png`)} alt={"Card"} width={480} height={320}>
-        //         </img>
-        //         <div className="desc">
-        //             <p className="title">{props.course[i].title}</p>
-        //             <p>{props.course[i].author}</p>
-        //             <p>
-        //                 <p className="orange">{props.course[i].rating}</p>
-        //                 <p className="brackets">({props.course[i].reviews})</p>
-        //             </p>
-        //             <p>E&#xa3;{props.course[i].price}<del>E&#xa3;{props.course[i].previous}   </del></p>
-        //         </div>
-        //     </div>
-        // </div>);
-        // elements.push(element);            
-    
-        // }
-        return elements;
+    return elements;
 }
 
 function myFunction(id) {

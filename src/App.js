@@ -13,23 +13,6 @@ import {
   QueryClientProvider,
 } from 'react-query'
 
-// function searchFunction(event){
-// 	event.preventDefault();
-// 	let inputField = form.elements['input-field'];
-// 	let value = inputField.value.toUpperCase();
-// 	let responsive = document.querySelectorAll('.responsive');
-// 	for(let i=0;i<responsive.length;i++){
-// 		let title = responsive[i].querySelector('.title');
-// 		let textValue = title.innerHTML;
-// 		if(textValue.toUpperCase().indexOf(value)>-1){
-// 			responsive[i].style.display = "";
-// 		} else {
-// 			responsive[i].style.display = "none";
-// 		}                
-		
-// 	}
-// }
-
 function App() {
   const navigate = useNavigate();
   let [searchParams, setSearchParams] = useSearchParams({replace:true});
@@ -37,10 +20,9 @@ function App() {
   return (
 	<div><nav className="nav" style={{height: "35px", position: "sticky", top:"0px", zIndex: "10", backgroundColor: "white"}}>
             <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-            {/* <span id="bar"><i className="fa fa-bars fa-2x"></i></span> */}
             <img className="logo" style={{maxHeight: "100%", display: "inline", paddingTop: "-10px",}} src={require('./images/udemylogo.png')} alt="Udemy Logo" />
             <span style={{display: "inline"}}>Categories</span>
-            <form /*onkeyup={searchFunction(event)}*/ id="form" style={{display: "inline"}} action="#" method="post">
+            <form id="form" style={{display: "inline"}} action="#" method="post">
                 <span style={{display: "inline"}} id="search"><i style={{position: "absolute", paddingTop: "19px", paddingLeft: "15px"}} className="fa fa-search"></i></span>
                 <input value={searchParams.get('filter') || ''}
                   onChange={(event) => {

@@ -5,31 +5,9 @@ import { useEffect, useState, useReducer } from "react";
 import LoadingSpinner from "./loadingSpinner";
 import {useQuery, useQueryClient} from "react-query";
 
-// const initState = {
-//     course: {},
-//     error: "",
-//     isLoading: false
-// };
-
-// const reducer = (oldState, action) => {
-//     switch(action.type) {
-//         case "SEND_REQUEST":
-//             return {...oldState, isLoading: true, error: ""};
-//         case "REQUEST_SUCCESS":
-//             return {course: action.payload, isLoading: false, error: ""};
-//         case "REQUEST_FAILURE":
-//             return {course: {}, isLoading: false, error: action.payload};
-//         default:
-//             return oldState;
-//     }
-// }
-
 export default function CPHeader(props) {
     let id = props.courseId;
-    // const [props, dispatch] = useReducer(reducer, initState);
     
-    console.log("instructor", props.course.instructor);
-    // let name = course.instructor[0].name;
     let org = "";
     if(id==="1" || id==="3") {
         org = `, ${props.course.instructor[1].name}`;

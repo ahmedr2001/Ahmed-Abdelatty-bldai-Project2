@@ -9,7 +9,6 @@ export default function CourseContent(props) {
     const [display, setDisplay] = useState("none");
 
     const toggleLecture = (id) => {
-        console.log(id);
         let img = document.getElementById(`img${id}`);
         let imgNode = ReactDOM.findDOMNode(img);
         if(imgNode.src === require("../images/arrow-up.png")) {
